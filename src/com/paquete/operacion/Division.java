@@ -2,16 +2,16 @@ package com.paquete.operacion;
 
 import java.util.Scanner;
 
-public class OperacionesAritmeticas {
+public class Division {
 	
-	public float division(){
+	public void division() throws ArithmeticException, NullPointerException, NumberFormatException {
 		
 
 		int indice = 0;
 		
-		while(indice ==0){
+		
 			
-		try {
+		//try {
 
 			Scanner scan = new Scanner(System.in);
 			Scanner scan1 = new Scanner(System.in);
@@ -32,24 +32,23 @@ public class OperacionesAritmeticas {
 			
 			System.out.println(division1);
 			
-			indice =1;
 			
-		} catch (ArithmeticException ex) {
-			// Excepcion aritmetica en el caso de vividir entre 0 el valor es incorrecto
-			System.out.print("Introduce un valor");
 			
-		} catch (NullPointerException ex) {
-			// Excepcion si no se inserta ningun valor
-			System.out.print("Introduce un valor");
-		} catch (NumberFormatException ex) {
-			System.out.print("Introduce un numero");
-
-		}
+//		} catch (ArithmeticException ex) {
+//			// Excepcion aritmetica en el caso de vividir entre 0 el valor es incorrecto
+//			System.out.print("Introduce un valor");
+//			
+//		} catch (NullPointerException ex) {
+//			// Excepcion si no se inserta ningun valor
+//			System.out.print("Introduce un valor");
+//		} catch (NumberFormatException ex) {
+//			System.out.print("Introduce un numero");
+//
+//		}
 	}
-		return division();
+		
 	}
 
 	
 	
 
-}
