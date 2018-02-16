@@ -6,28 +6,31 @@ public class Test {
 
 	@org.junit.Test
 	public void test() {
+		int dividendo = 0;
+		int divisor = 0;
 
+		/*
+		 * Division pedirDividenvo = new Division();
+		 * pedirDividenvo.pedirDividenvo(dividendo);
+		 * 
+		 * Division pedirDivisor = new Division();
+		 * 
+		 * pedirDivisor.pedirDivisor(divisor);
+		 */
 		try {
+
 			Division division = new Division();
-			division.division();
+			// division.division(dividendo, divisor);
+			division.division(7, 0);
+			fail("Introduce un valor diferente de 0");
 
 		} catch (ArithmeticException ex) {
 			// Excepcion aritmetica en el caso de vividir entre 0 el valor es
 			// incorrecto
 			System.out.print("Introduce un valor");
-			fail("Introduce un valor");
-			
 
-		} catch (NullPointerException ex) {
-			// Excepcion si no se inserta ningun valor
-			System.out.print("Introduce un valor");
-			fail("Introduce un valor");
-			
-		} catch (NumberFormatException ex) {
-			System.out.print("Formato erroneo");
-			fail("Formato erroneo");
-			
 		}
+
 	}
 
 }
