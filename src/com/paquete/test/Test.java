@@ -1,6 +1,8 @@
-package com.paquete.operacion;
+package com.paquete.test;
 
 import static org.junit.Assert.*;
+
+import com.paquete.operacion.Division;
 
 public class Test {
 
